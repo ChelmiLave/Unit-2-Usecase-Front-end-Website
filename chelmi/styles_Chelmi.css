@@ -19,6 +19,10 @@ ul{ list-style: none;}
 
 header{
     background-color: rgb(245, 245, 245);
+    position: relative; /* Asegura que no esté fuera del flujo del documento */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.9); /* Hace el fondo un poco translúcido si es necesario */
 }
 header .logo{
     margin: 0;
@@ -277,8 +281,8 @@ header a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    
 }
+
 #mian{
     background-color: rgb(100,100,100);
     color: white;
