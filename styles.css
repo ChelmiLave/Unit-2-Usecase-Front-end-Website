@@ -120,15 +120,6 @@ header a:hover{
     border-radius: 10px;
 }
 
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.637),
-        rgba(0, 0, 0, 0.699)
-    )
-    ,url("assets/logo.jpg");
-}
-
 #work_xp .carta:nth-child(2){
     background-image: linear-gradient(
         0deg,
@@ -163,32 +154,6 @@ header a:hover{
 
 }
 
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.637),
-        rgba(0, 0, 0, 0.699)
-    )
-    ,url("assets/LMS.webp");
-}
-
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.637),
-        rgba(0, 0, 0, 0.699)
-    )
-    ,url("assets/led.jpg");
-}
-
-.carta:nth-child(4){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.637),
-        rgba(0, 0, 0, 0.699)
-    )
-    ,url("assets/leng.jpg");
-}
 
 #awards{
     background-color: rgb(100,100,100);
@@ -335,7 +300,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("assets/jya.jpg");
+    ,url("/chelmi/assets/jya.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

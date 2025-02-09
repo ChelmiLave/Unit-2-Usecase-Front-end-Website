@@ -234,7 +234,7 @@ header a:hover{
     }
 
     #summary .img-container{
-    background-image: url(/chelmi/assets/upen.jpg);
+    background-image: url(assets/upen.jpg);
     background-size: cover;
     background-position: center center;
     height: 400px;
