@@ -74,61 +74,6 @@ header a:hover{
     color: white;
 }
 
-#summary{ background-color: rgb(200,200,200);}
-
-#summary .container{
-    text-align: center;
-    padding: 200px 12px;
-}
-
-#education{
-    background-color: rgb(100,100,100);
-    color: white;
-    text-align: center;
-}
-
-#education .container{
-    padding: 100px 0px;
-}
-
-#education h2{
-    margin-top: 0;
-    font-size: 3.2em;
-    color: rgb(213, 233, 166);
-}
-#work_xp{
-    background-color: rgb(30,30,30);
-    color: white;
-    text-align: center;
-}
-
-#work_xp .container{
-    padding: 100px 0px;
-}
-
-#work_xp h2{
-    margin-top: 0;
-    font-size: 3.2em;
-    color: rgb(197, 176, 240);
-}
-
-#work_xp .carta{
-    background-size: cover;
-    background-position: center center;
-    padding: 50px;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-#work_xp .carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.637),
-        rgba(0, 0, 0, 0.699)
-    )
-    ,url("assets/suhsi.webp");
-}
-
 #skills{
     background-color: rgb(30,30,30);
     color: white;
@@ -300,7 +245,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/chelmi/assets/jya.jpg");
+    ,url("chelmi/assets/jya.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
