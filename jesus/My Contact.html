@@ -7,66 +7,148 @@
 
      </head>
      <body>
+        <header>
+            <div class="container">
+                <p class="logo pulse">Contact me</p>
+                <nav>
+                    <a href="../index.html">Home</a>
+                    <a href="summary.html">Back</a>
+                    <a href="My Projects.html">Projects</a>
+                    <a href="My Hobbies.html">My Hobbies</a>
+                </nav>
+            </div>
+        </header>
         <section id="hero">
             <h1>Jesus Eduardo <br> Romero Isiordia</h1>
             <p>Phone: +52 311 154 4433</p>
             <p>Email: jesus.romero@upnay.edu.mx</p>
         </section>
      <footer>
-        <div class="container">
-            
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="summary.html">Back</a>
-                <a href="My Projects.html">Projects</a>
-                <a href="My Hobbies.html">My Hobbies</a>
-            </nav>
-        </div>
         <h5>© Jesus Romero. All rights reserved. </h5>
      </footer>
      <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+        h1{ font-size: 3.5em;}
+        h2{ font-size: 2.7em;}
+        h3{ font-size: 2em}
+        p{  font-size: 1.2em;}
+        ul{ list-style: none;}
+        
         .container{
-    max-width: 1000px;
-    margin: auto;
-}
-
-#hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    color: white;
-    background-color: green;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("assets/yo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+            max-width: 1400px;
+            margin: auto;
+        }
+        .color-acento{  color: blueviolet;}
+        
+        header{
+            background-color: rgb(245, 245, 245);
+            position: relative;
+            z-index: 1000;
+            width: 100%;
+            background-color: rgba(245, 245, 245, 0.9);
+        }
+        header .logo{
+            margin: 0;
+            padding: 25px 30px;
+            font-weight: bold;
+            color: cornflowerblue;
+            font-size: 1.65em;
+        }
+        header .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header nav{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+        
+        header a{
+            padding: 5px 12px;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+        
+        header a:hover{
+            color: mediumpurple;
+        }
+        @media (min-width: 720px){
+            header{
+                position: fixed;
+                width: 100%;
+            }
+            header .container{
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            header nav{
+                flex-direction: row;
+                padding-bottom: 0;
+                padding-right: 20px;
+            }
+        }
+        #hero{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            height: 90vh;
+            color: white;
+            background-color: green;
+            background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+            ,url("assets/yo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
     
-}
-footer {
-    background-color: black;
-    padding: 10px;
-    text-align: center;
-    color: white;
-  }
-footer nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
-}
-footer a{
+        }
+        footer {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        footer nav{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+        footer a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
     color: white;
-}
+        }
+        .pulse {
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
      </style>
 </html>
