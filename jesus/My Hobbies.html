@@ -5,35 +5,78 @@
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <title>My hobbies</title>
 
-         <link rel="stylesheet" href="styles_Chelmi.css">
      </head>
      <body>
-        <header>
-            <div class="container">
-                <p class="logo">Hobbies</p>
-                <nav>
-                    <a href="../index.html">Home</a></li>
-                    <a href="myOnlineResume.html">Back</a>
-                    <a href="proyects.html">Proyects</a>
-                    <a href="contact_me.html">Contact me</a>
-                </nav>
-            </div>
-        </header>
         
         <section id="skills">
-            <div class="container">
-                <h2>My hobbies</h2>
-                <p>Play videogames (Valorant)</p>
-                <p>Listeng music (TOP)</p>
-                <p>Watch anime</p>
-                <p>Read mangas</p>
-            </div>
+            
         </section>
         <section id="hero">
-            <h1>Jesus <br> Vela Flores</h1>
+            <h1>Jesus Eduardo <br> Romero Isiordia</h1>
+            <div class="container">
+            <h2>My hobbies are:</h2>
+                
+                    <p></p>Video games</li>
+                    <p>Programming</li>
+                    <p>Hanging out with friends</li>
+                
+            </div>
         </section>
      </body>
      <footer>
-        <h5>© Angel Vela. All rights reserved. </h5>
+        <div class="container">
+            <nav>
+                <a href="../index.html">Home</a></li>
+                <a href="myOnlineResume.html">Back</a>
+                <a href="proyects.html">Proyects</a>
+                <a href="contact_me.html">Contact me</a>
+            </nav>
+        </div>
+        <style>
+            .container{
+        max-width: 1000px;
+        margin: auto;
+    }
+    
+    #hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+        color: white;
+        background-color: green;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("assets/yo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        
+    }
+    footer {
+        background-color: black;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    footer a{
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+         </style>
+        <h5>© Jesus Romero. All rights reserved. </h5>
      </footer>
 </html>
