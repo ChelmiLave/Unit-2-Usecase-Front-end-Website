@@ -1,0 +1,344 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em}
+p{  font-size: 1.2em;}
+ul{ list-style: none;}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-color: green;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("assets/yo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#summary{ background-color: white}
+
+#summary .container{
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#education{
+    background-color: blue;
+    color: yellow;
+    text-align: center;
+}
+
+#education .container{
+    padding: 50px 0px;
+}
+
+#education h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    
+}
+#work_xp{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#work_xp .container{
+    padding: 50px 0px;
+}
+
+#work_xp h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#work_xp .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.637),
+        rgba(0, 0, 0, 0.699)
+    )
+    ,url("assets/logo.jpg");
+}
+
+#work_xp .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.637),
+        rgba(0, 0, 0, 0.699)
+    )
+    ,url("assets/suhsi.webp");
+}
+
+#skills{
+    background-color: turquoise;
+    color: white;
+    text-align: center;
+}
+
+#skills .container{
+    padding: 50px 0px;
+}
+
+#skills h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    color: blue;
+}
+
+#skills .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.637),
+        rgba(0, 0, 0, 0.699)
+    )
+    ,url("assets/LMS.webp");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.637),
+        rgba(0, 0, 0, 0.699)
+    )
+    ,url("assets/led.jpg");
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.637),
+        rgba(0, 0, 0, 0.699)
+    )
+    ,url("assets/leng.jpg");
+}
+
+#awards{
+    background-color:red;
+    color: gold;
+    text-align: center;
+}
+
+#awards .container{
+    padding: 50px 0px;
+}
+
+#awards h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+/*---------   Media Responsive   ---------*/
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #summary .container{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    #summary .texto{
+        width: 50%;
+        text-align: center;
+        padding: 0px 30px;
+    }
+
+    #summary .img-container{
+    background-image: url(assets/upen.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 500px;
+    }
+
+    #work_xp .xp{
+        display: flex;
+        justify-content: center;
+    }
+
+    #skills .skls{
+        display: flex;
+        justify-content: center;
+    }
+    .flex-item{
+        flex: 100%;
+      }
+
+}
+
+
+/*----------      Index      -----------*/
+
+
+#hero-index{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("assets/jya.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#mian{
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+#mian .container{
+    padding: 100px 0px;
+}
+
+#main h3{
+    margin-top: 0;
+    font-size: 3.2em;
+    color: rgb(104, 160, 233);
+}
+
+#main .carta-index{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.carta-index:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.637),
+        rgba(0, 0, 0, 0.699)
+    )
+    ,url("assets/yo.jpg");
+}
+
+.carta-index.carta-index:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.637),
+        rgba(0, 0, 0, 0.699)
+    )
+    ,url("assets/jesus.jpg");
+}
+
+/*----------- Contact ----------*/
+#heroC{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("assets/jya.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+
+.flex-container a:hover {
+    color: #0099cc;
+  }
+
+.flex-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    
+}
+.flex-item{
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+    padding: 15px;
+}
+
+
+footer {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+footer nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+footer a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
