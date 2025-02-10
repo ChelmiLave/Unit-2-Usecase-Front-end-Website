@@ -308,7 +308,7 @@ header a:hover{
     text-align: right;
 }
 
-.carta-index:first-child{
+.carta-index #Angel{
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.637),
@@ -317,7 +317,7 @@ header a:hover{
     ,url("assets/yo.jpg");
 }
 
-.carta-index.carta-index:nth-child(2){
+.carta-index #Jesus{
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.637),
