@@ -19,10 +19,10 @@ ul{ list-style: none;}
 
 header{
     background-color: rgb(245, 245, 245);
-    position: relative; /* Asegura que no esté fuera del flujo del documento */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    position: relative;
+    z-index: 1000;
     width: 100%;
-    background-color: rgba(245, 245, 245, 0.9); /* Hace el fondo un poco translúcido si es necesario */
+    background-color: rgba(245, 245, 245, 0.9);
 }
 header .logo{
     margin: 0;
@@ -293,22 +293,28 @@ header a:hover{
     padding: 100px 0px;
 }
 
-#main h3{
+.menu h3{
     margin-top: 0;
     font-size: 3.2em;
     color: rgb(104, 160, 233);
 }
 
 #main .carta-index{
+    display: grid;
+    height: 50vh;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     background-size: cover;
     background-position: center center;
     padding: 50px;
     margin: 20px;
     border-radius: 10px;
     text-align: right;
+    min-width: 100%;
 }
 
-.carta-index #Angel{
+.carta-index#Angel{
+    
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.637),
@@ -316,8 +322,15 @@ header a:hover{
     )
     ,url("assets/yo.jpg");
 }
+.carta-index#Angel:hover{
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 250, 250, 0.637),
+        rgba(255, 255, 255, 0.699)
+    ), url("assets/yo.jpg");
+}
 
-.carta-index #Jesus{
+.carta-index#Jesus{
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.637),
@@ -325,7 +338,13 @@ header a:hover{
     )
     ,url("assets/jesus.jpg");
 }
-
+.carta-index#Jesus:hover{
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 250, 250, 0.637),
+        rgba(255, 255, 255, 0.699)
+    ), url("assets/jesus.jpg");
+}
 /*----------- Contact ----------*/
 #heroC{
     display: flex;
